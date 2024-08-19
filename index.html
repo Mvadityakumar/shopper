@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar1 navbar-expand-lg">
+        <div class="container-fluid ps-3 truck">
+          <a class="navbar-brand bi bi-truck" href="#">
+            FREE SHIPPING WORLDWIDE</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse headinner1"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="./images/icons/united-states.png"
+                    alt=""
+                    width="20px"
+                  />
+                  United States
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        src="./images/icons/united-states.png"
+                        alt=""
+                        width="20px"
+                      />
+                      United States</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        src="./images/icons/canada.png"
+                        alt=""
+                        width="20px"
+                      />
+                      Canada</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img
+                        src="./images/icons/germany.png"
+                        alt=""
+                        width="20px"
+                      />
+                      Germany</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  USD
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> USD</a></li>
+                  <li><a class="dropdown-item" href="#"> EUR</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  English
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#"> French</a></li>
+                  <li><a class="dropdown-item" href="#"> German</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Shipping</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav pe-4">
+              <li class="nav-item d-flex gap-2">
+                <a
+                  class="nav-link bi bi-facebook"
+                  aria-current="page"
+                  href="#"
+                ></a>
+                <a class="nav-link bi bi-twitter" href="#"></a>
+                <a class="nav-link bi bi-instagram" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar2">
+        <div class="container-fluid mainnav">
+          <a class="navbar-brand mainname fs-4 fw-bold" href="#">Shopper.</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse mainnavinner"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav navbarmiddle">
+              <a class="nav-link fw-bold" aria-current="page" href="#">Home</a>
+              <a class="nav-link fw-bold" href="#">Catalog</a>
+              <a class="nav-link fw-bold" href="#">Shop</a>
+              <a class="nav-link fw-bold" href="#">Pages</a>
+              <a class="nav-link fw-bold" href="#">Blog</a>
+              <a class="nav-link fw-bold" href="#" aria-disabled="true">Docs</a>
+            </div>
+
+            <div class="navbarlast">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="bi bi-search"></i
+              ></a>
+              <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+              <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
+              <a class="nav-link bi bi-cart" id="cart" href="#"><p>2</p></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <article class="articlename">
+      <p>
+        <i class="bi bi-lightning-charge-fill"></i> HAPPY HOLIDAY DEALS ON
+        EVERYTHING <i class="bi bi-lightning-charge-fill"></i>
+      </p>
+    </article>
+    <main>
+      <div class="fashion">
+        <div class="women">
+          <img src="./images/fashion-portrait-young-elegant-woman.jpg" alt="" />
+
+          <button type="button">
+            Shop Women <i class="bi bi-arrow-right-short"></i>
+          </button>
+          <h1>Women</h1>
+        </div>
+        <div class="men">
+          <img src="./images/young-handsome-hipster-man-standing.jpg" alt="" />
+
+          <button type="button">
+            Shop Men <i class="bi bi-arrow-right-short"></i>
+          </button>
+          <h1>Men</h1>
+        </div>
+        <div class="kids">
+          <img src="./images/asian-girl-posing.jpg" alt="" />
+
+          <button type="button">
+            Shop Kids <i class="bi bi-arrow-right-short"></i>
+          </button>
+          <h1>Kids</h1>
+        </div>
+      </div>
+      <div class="matterinmainouter">
+        <div class="matterinmain">
+          <div>
+            <h4><i class="bi bi-truck"> </i> FREE SHIPPING</h4>
+            <p>From all orders over $100</p>
+          </div>
+
+          <div>
+            <h4><i class="bi bi-repeat"> </i> FREE RETURNS</h4>
+            <p>Return money within 30 days</p>
+          </div>
+
+          <div>
+            <h4><i class="bi bi-lock"> </i>SECURE SHOPPING</h4>
+            <p>You're in safe hands</p>
+          </div>
+
+          <div>
+            <h4><i class="bi bi-tag"> </i>OVER 10,000 STYLES</h4>
+            <p>We have everything you need</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="newcollection">
+      <p>NEW COLLECTION</p>
+      <h2>Best Picks 2024</h2>
+      <p>
+        Appear, dry there darkness they're seas, dry waters thing fly midst.
+        Beast, above fly brought Very green.
+      </p>
+    </div>
+    <div class="newcollectionpics">
+      <a href="">
+        <div class="newcollectionpicsinner">
+          <div class="collectionup">
+            <div class="bag">
+              <h3>Bags Collection</h3>
+              <p>Shop Now <i class="bi bi-arrow-right-short"></i></p>
+            </div>
+            <div class="printedmen">
+              <h3>Printed men's Shirts</h3>
+              <p>Shop Now <i class="bi bi-arrow-right-short"></i></p>
+              <p id="save30">
+                save <br />
+                <span>30% </span>
+              </p>
+            </div>
+          </div>
+          <div class="collectiondowm">
+            <div class="basicwomen">
+              <h3>Basic women's Dresses</h3>
+              <p>Shop Now <i class="bi bi-arrow-right-short"></i></p>
+            </div>
+            <div class="sweatshirts">
+              <h3>Sweatshirts</h3>
+              <p>Shop Now <i class="bi bi-arrow-right-short"></i></p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="mainfilterdiv">
+      <div class="topmonth">
+        <h3>Top month Sellers</h3>
+      </div>
+      <div class="filters">
+        <div class="filter1">
+          <a href="">Women</a>
+          <a href=""> Men</a>
+          <a href="">Kids</a>
+        </div>
+        <div class="filter2">
+          <div class="filter2inner">
+            <img src="./images/topmonth/pic1.png" alt="" />
+            <div class="topmonthicons">
+              <span class="bi bi-eye"></span>
+              <span class="bi bi-cart"></span>
+              <span class="bi bi-heart"></span>
+            </div>
+
+            <p>Shoes</p>
+            <h5>Leather mid-heel Sandals</h5>
+            <h6>$129.00</h6>
+            <div id="labelnew">
+              <span>NEW</span>
+            </div>
+          </div>
+
+          <div class="filter2inner">
+            <img src="./images/topmonth/pic2.png" alt="" />
+            <div class="topmonthicons">
+              <span class="bi bi-eye"></span>
+              <span class="bi bi-cart"></span>
+              <span class="bi bi-heart"></span>
+            </div>
+            <p>Dresses</p>
+            <h5>Cotton floral print Dress</h5>
+            <h6>$40.00</h6>
+          </div>
+
+          <div class="filter2inner">
+            <img src="./images/topmonth/pic3.png" alt="" />
+            <div class="topmonthicons">
+              <span class="bi bi-eye"></span>
+              <span class="bi bi-cart"></span>
+              <span class="bi bi-heart"></span>
+            </div>
+
+            <p>Shoes</p>
+            <h5>Leather Sneakers</h5>
+            <h6 id="redfilterlabel"><span>$100.00</span> $85.00</h6>
+            <div id="labelnew">
+              <span>SALE</span>
+            </div>
+          </div>
+
+          <div class="filter2inner">
+            <img src="./images/topmonth/pic4.png" alt="" />
+            <div class="topmonthicons">
+              <span class="bi bi-eye"></span>
+              <span class="bi bi-cart"></span>
+              <span class="bi bi-heart"></span>
+            </div>
+            <p>Tops</p>
+            <h5>Cropped cotton Top</h5>
+            <h6>$50.00</h6>
+          </div>
+
+          <div class="filter2inner">
+            <img src="./images/topmonth/pic5.png" alt="" />
+            <div class="topmonthicons">
+              <span class="bi bi-eye"></span>
+              <span class="bi bi-cart"></span>
+              <span class="bi bi-heart"></span>
+            </div>
+            <p>Dresses</p>
+            <h5>Floral print midi Dress</h5>
+            <h6>$50.00</h6>
+          </div>
+
+          <div class="filter2inner">
+            <img src="./images/topmonth/pic6.png" alt="" />
+            <div class="topmonthicons">
+              <span class="bi bi-eye"></span>
+              <span class="bi bi-cart"></span>
+              <span class="bi bi-heart"></span>
+            </div>
+            <p>Bags</p>
+            <h5>Suede cross body Bag</h5>
+            <h6 id="redfilterlabel"><span> $900.00</span> $65.00</h6>
+            <div id="labelnew">
+              <span>SALE</span>
+            </div>
+          </div>
+
+          <div class="filter2inner">
+            <img src="./images/topmonth/pic7.png" alt="" />
+            <div class="topmonthicons">
+              <span class="bi bi-eye"></span>
+              <span class="bi bi-cart"></span>
+              <span class="bi bi-heart"></span>
+            </div>
+            <p>Skirts</p>
+            <h5>Printed A-line Skirt</h5>
+            <h6>$79.00</h6>
+          </div>
+
+          <div class="filter2inner">
+            <img src="./images/topmonth/pic8.png" alt="" />
+            <div class="topmonthicons">
+              <span class="bi bi-eye"></span>
+              <span class="bi bi-cart"></span>
+              <span class="bi bi-heart"></span>
+            </div>
+            <p>Shoes</p>
+            <h5>Heel strappy Sandals</h5>
+            <h6>$90.00</h6>
+            <div id="labelnew">
+              <span>NEW</span>
+            </div>
+          </div>
+        </div>
+        <div class="dicovermore">
+          <div>
+            <h6>Dicover more</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="bannerinner">
+        <div class="bannertitle">
+          <h1>
+            Get -50% from <br />
+            Summer Collection
+          </h1>
+        </div>
+        <div class="bannertimer">
+          <p id="demo"></p>
+        </div>
+
+        <div class="bannerbutton">
+          <h3>Shop Now <i class="bi bi-arrow-right-short"></i></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <div class="reviewtitlediv">
+        <div class="reviewtitle">
+          <p>WHAT BUYERS SAY</p>
+          <h1>Latest buyers Reviews</h1>
+        </div>
+      </div>
+
+      <div
+        id="carouselExampleControls"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="card-wrapper container-sm d-flex gap-4 justify-content-around"
+            >
+              <div class="card" style="width: 20rem">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around">
+                    <img
+                      src="./images/topmonth/pic3.3.png"
+                      width="80px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <div class="reviewcardtitle">
+                      <p>Shoes</p>
+                      <h5 class="card-title">Low top Sneakers</h5>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="reviewcardbody">
+                    <p>
+                      From creepeth said moved given divide make multiply of him
+                      shall itself also above second doesn't unto created saying
+                      land herb sea midst night wherein
+                    </p>
+                    <p>Logan Edwards, 01 Jun 2020</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="width: 20rem">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around">
+                    <img
+                      src="./images/topmonth/pic2.2.png"
+                      width="80px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <div class="reviewcardtitle">
+                      <p>Dresses</p>
+                      <h5 class="card-title">Cotton print Dress</h5>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="reviewcardbody">
+                    <p>
+                      From creepeth said moved given divide make multiply of him
+                      shall itself also above second doesn't unto created saying
+                      land herb sea midst night wherein
+                    </p>
+                    <p>Logan Edwards, 01 Jun 2020</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="width: 20rem">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around">
+                    <img
+                      src="./images/topmonth/pic1.1.png"
+                      width="80px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <div class="reviewcardtitle">
+                      <p>Shoes</p>
+                      <h5 class="card-title">Leather mid-heel Sandals</h5>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="reviewcardbody">
+                    <p>
+                      From creepeth said moved given divide make multiply of him
+                      shall itself also above second doesn't unto created saying
+                      land herb sea midst night wherein
+                    </p>
+                    <p>Logan Edwards, 01 Jun 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container-sm d-flex gap-4 justify-content-around"
+            >
+              <div class="card" style="width: 20rem">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around">
+                    <img
+                      src="./images/topmonth/pic6.6.png"
+                      width="80px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <div class="reviewcardtitle">
+                      <p>Bags & Accessories</p>
+                      <h5 class="card-title">Suede cross body Bag</h5>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="reviewcardbody">
+                    <p>
+                      From creepeth said moved given divide make multiply of him
+                      shall itself also above second doesn't unto created saying
+                      land herb sea midst night wherein
+                    </p>
+                    <p>Logan Edwards, 01 Jun 2020</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="width: 20rem">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around">
+                    <img
+                      src="./images/topmonth/pic7.7.png"
+                      width="80px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <div class="reviewcardtitle">
+                      <p>Skirts</p>
+                      <h5 class="card-title">Printed A-line Skirt</h5>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="reviewcardbody">
+                    <p>
+                      From creepeth said moved given divide make multiply of him
+                      shall itself also above second doesn't unto created saying
+                      land herb sea midst night wherein
+                    </p>
+                    <p>Logan Edwards, 01 Jun 2020</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="width: 20rem">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around">
+                    <img
+                      src="./images/topmonth/pic8.8.png"
+                      width="80px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <div class="reviewcardtitle">
+                      <p>Shoes</p>
+                      <h5 class="card-title">Heel strappy Sandals</h5>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="reviewcardbody">
+                    <p>
+                      From creepeth said moved given divide make multiply of him
+                      shall itself also above second doesn't unto created saying
+                      land herb sea midst night wherein
+                    </p>
+                    <p>Logan Edwards, 01 Jun 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container-sm d-flex gap-4 justify-content-around"
+            >
+              <div class="card" style="width: 20rem">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around">
+                    <img
+                      src="./images/topmonth/pic8.8.png"
+                      width="80px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <div class="reviewcardtitle">
+                      <p>Shoes</p>
+                      <h5 class="card-title">Heel strapppy Sandals</h5>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="reviewcardbody">
+                    <p>
+                      From creepeth said moved given divide make multiply of him
+                      shall itself also above second doesn't unto created saying
+                      land herb sea midst night wherein
+                    </p>
+                    <p>Logan Edwards, 01 Jun 2020</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="width: 20rem">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around">
+                    <img
+                      src="./images/topmonth/pic3.3.png"
+                      width="80px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <div class="reviewcardtitle">
+                      <p>Shoes</p>
+                      <h5 class="card-title">Leather Sneakers</h5>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="reviewcardbody">
+                    <p>
+                      From creepeth said moved given divide make multiply of him
+                      shall itself also above second doesn't unto created saying
+                      land herb sea midst night wherein
+                    </p>
+                    <p>Logan Edwards, 01 Jun 2020</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="width: 20rem">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around">
+                    <img
+                      src="./images/topmonth/pic5.5.png"
+                      width="80px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <div class="reviewcardtitle">
+                      <p>Dresses</p>
+                      <h5 class="card-title">Floral print midi Dress</h5>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="reviewcardbody">
+                    <p>
+                      From creepeth said moved given divide make multiply of him
+                      shall itself also above second doesn't unto created saying
+                      land herb sea midst night wherein
+                    </p>
+                    <p>Logan Edwards, 01 Jun 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="brands">
+      <div class="brandsinnerdiv">
+        <div class="brandstitle">
+          <h3>@shopper</h3>
+          <p>Appear, dry there darkness they're seas, dry waters.</p>
+        </div>
+
+        <div class="brandsimgs">
+          <img src="./images/brands/1.png" alt="" />
+          
+          <img src="./images/brands/2.png" alt="" />
+          <img src="./images/brands/3.png" alt="" />
+          <img src="./images/brands/4.png" alt="" />
+          <img src="./images/brands/5.png" alt="" />
+          <img src="./images/brands/6.png" alt="" />
+        </div>
+
+        <div class="brandsnames">
+          <img src="./images/brandnames/1 (2).png" alt="" />
+          <img src="./images/brandnames/2 (2).png" alt="" />
+          <img src="./images/brandnames/3 (2).png" alt="" />
+          <img src="./images/brandnames/4 (2).png" alt="" />
+          <img src="./images/brandnames/5 (2).png" alt="" />
+          <img src="./images/brandnames/6 (2).png" alt="" />
+          <img src="./images/brandnames/7.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footertitle">
+          <h1>Want style Ideas and Treats?</h1>
+        </div>
+        <div class="footerinputs">
+          <input type="text" placeholder="Enter Email *" />
+          <button type="button">Subscribe</button>
+        </div>
+        <div class="links">
+          <div class="sociallinnks">
+            <h2>Shopper.</h2>
+            <div class="icons">
+              <span class="bi bi-facebook"></span>
+              <span class="bi bi-youtube"></span>
+              <span class="bi bi-twitter"></span>
+              <span class="bi bi-instagram"></span>
+            </div>
+          </div>
+          <div class="linknames">
+            <div class="support">
+              <h3>SUPPORT</h3>
+              <div class="supportlinks">
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Size Guide </a>
+                <a href="#">Shipping & Returns</a>
+              </div>
+            </div>
+
+            <div class="support">
+              <h3>SHOP</h3>
+              <div class="supportlinks">
+                <a href="#">Men's Shopping</a>
+                <a href="#">Women's Shopping</a>
+                <a href="#">Kids' Shopping</a>
+                <a href="#">Discounts</a>
+              </div>
+            </div>
+
+            <div class="support">
+              <h3>COMPANY</h3>
+              <div class="supportlinks">
+                <a href="#">Careers</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy & Cookie policy</a>
+              </div>
+            </div>
+
+            <div class="support">
+              <h3>CONTACT</h3>
+              <div class="supportlinks">
+                <a href="#">1-202-555-0105</a>
+                <a href="#">1-202-555-0106</a>
+                <a href="#">help@shopper.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <div>
+            <p>&copy; 2024 All rights reserved. Designed by Aditya.</p>
+          </div>
+          <div class="copyrightcards">
+            <img
+              src="./images/footer/Screenshot 2024-07-29 151605.png"
+              alt=""
+            />
+            <img
+              src="./images/footer/Screenshot 2024-07-29 151622.png"
+              alt=""
+            />
+            <img
+              src="./images/footer/Screenshot 2024-07-29 151639.png"
+              alt=""
+            />
+            <img
+              src="./images/footer/Screenshot 2024-07-29 151651.png"
+              alt=""
+            />
+            <img
+              src="./images/footer/Screenshot 2024-07-29 151702.png"
+              alt=""
+            />
+            <img
+              src="./images/footer/Screenshot 2024-07-29 151712.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

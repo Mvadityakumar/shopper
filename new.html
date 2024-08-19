@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <style>
+    .brandsimghover{
+        background: url(./images/brands/4.png);
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        color: white;
+        align-items: center;
+       
+        gap: 10px;
+    }
+
+    .imea{
+        opacity: 0;
+    }
+   
+    .brandsimghover:hover .imea{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+    .shoe {
+            width:200px;
+            height: 300px;
+            background-image: url("./images/asian-girl-posing.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            overflow: hidden;
+        }
+        .shoe:hover {
+            background-image: url("./images/close-up-fashion-details-taupe-trendy-colors-woman-wearing-elegant-coat-floral-maxi-dress-crossbody-bag-trendy-accessories-jewelry-spring-autumn-time-burgundy-manicure.jpg");
+            background-size: cover;
+        }
+        .shoe:hover .fav-icons {
+            transform: translateY(-40px);
+            transition: 1s;
+            opacity: 1;
+        }
+        .fav-icons span {
+            background-color: white;
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .fav-icons span:hover {
+            background-color: red;
+            color:white;
+        }
+        .fav-icons {
+            transform: translateY(40px);
+            transition: 1s;
+            opacity: 0;
+        }
+    
+  </style>
+
+
+
+
+
+
+  </head>
+  <body>
+    <div class="brandsimghover">
+     
+      <div class="imea">
+        <span  class="bi bi-heart"> 248</span>
+    
+      <span  class="bi bi-chat-left"> 7</span>
+      </div>
+    </div>
+
+
+    <div class="shoe">
+        <div class="fav-icons">
+            <span class="bi bi-eye"></span>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-heart"></span>
+        </div>
+    </div>
+  </body>
+</html>
